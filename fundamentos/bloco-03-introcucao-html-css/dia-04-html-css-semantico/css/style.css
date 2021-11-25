@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f5deb3;
+    background-image: url(/images/areia.jpg);
+}
+
+p {
+    font-size: 15px;
+    width: 80%;
+    margin: 5px auto;
+}
+
+.classificacao {
+    margin: 5px auto;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.classificacao td, .classificacao th {
+    border: 1px solid #ddd;
+    padding: 3px;
+}
+
+.classificacao tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.classificacao tr:hover {
+    background-color: #ddd;
+}
+
+.classificacao th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #333333;
+    color: white;
+}
+
+main {
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 80px;
+}
+
+section {
+    background-color: #ffebcd;
+    border-radius: 5%;
+    box-shadow: 0 2px 12px rgb(100 95 136 / 20%);
+}
+
+.cabecalho {
+    text-align: center;
+    padding: 20px;
+    margin-top: 45px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 12px rgb(100 95 136 / 20%);
+    background-color: #ffffff;
+}
+
+.cabecalho h1 {
+    font-weight: 700;
+    color: #2d2b3a;
+}
+
+.menu-principal {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0;
+    box-shadow: 0 2px 6px rgb(100 95 136 / 15%);
+    background-color: yellow;
+    z-index: 2;
+}
+
+.menu-principal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.menu-principal li {
+    float: left;
+    list-style: none;
+}
+
+.menu-principal a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-principal a:hover {
+    background-color: #111111;
+}
+
+.geral {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.geral img {
+    width: 600px;
+    margin: 10px;
+}
+
+.fatos {
+    width: 30%;
+    margin: 20px auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.fatos img{
+    width: 300px;
+    margin: 5px;
+}
+
+.sub-titulo {
+    color: #2d2b3a;
+    font-weight: 600;
+    padding: 15px;
+    border-bottom: #cccccc 2px dashed;
+}
+
+.referencia {
+    font-size: 12px;
+}
+
+.referencia a {
+    color: #333333;
+}
+
+.referencia a:link, .referencia a:visited {
+    text-decoration: none;
+}
+  
+.referencia a:hover, .referencia a:active {
+    text-decoration: underline;
+}
+  
+.rodape {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: #000000;
+}
+
+.rodape p {
+    padding: 10px;
+    color: #ffffff;
+    float: left;
+    margin-left: 10px;
+}
