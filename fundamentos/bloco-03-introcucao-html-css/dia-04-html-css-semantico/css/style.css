@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #cccccc;
+}
+
+.cabecalho {
+    text-align: left;
+    padding: 20px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.cabecalho h1 {
+    font-weight: 500;
+}
+
+.menu-principal {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0;
+    box-shadow: 0 2px 6px rgb(100 95 136 / 15%);
+    background-color: yellow;
+    z-index: 2;
+}
+
+.menu-principal li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: yellow;
+}
+
+.rodape p {
+    padding: 10px;
+}
