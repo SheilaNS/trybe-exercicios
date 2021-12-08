@@ -40,7 +40,7 @@
         let primeiroFilhoDoFilho = document.getElementById("primeiroFilhoDoFilho");
         primeiroFilhoDoFilho.innerText = "Olá! Eu sou o primeiro filho do filho.";
 
-        let pai = document.getElementById("pai");
+        let pai = document.querySelector("#pai");
         let primeiroFilho = pai.firstElementChild;
 
         let primeiroFilhoDeOndeEstou = ondeEstou.previousElementSibling;
@@ -74,19 +74,27 @@
         
         /* 
             Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+            Remover irmaoDeOndeVoceEsta
         */
 
-        let paiDoPai = document.getElementById("paiDoPai");
-        let filhosDoPai = pai.childNodes;
-        let listaFilhos = pai.childNodes;
+        let removeFilho = primeiroFilho; 
+        removeFilho.remove();
+        removeFilho = document.querySelector('#segundoEUltimoFilhoDoFilho');
+        removeFilho.remove();
+        removeFilho = document.querySelector('#filhoDoPrimeiroFilhoDoFilho');
+        removeFilho.remove();
+        removeFilho = document.querySelector('#filhoDeOndeVoceEsta');
+        removeFilho.remove();
+        removeFilho = document.querySelector('#terceiroFilho');
+        removeFilho.remove();
+        removeFilho = document.querySelector('#quartoEUltimoFilho');
+        removeFilho.remove();
+        removeFilho = document.querySelector('#irmaoDeOndeVoceEsta');
+        removeFilho.remove();
+        
 
-/*         for (let i = 0; i < filhosDoPai.length; i += 1) {
-            let tchauFilho = filhosDoPai[i];
-            if (i !== 3) {
-                listaFilhos.remove(tchauFilho);
-            }
-        }
- */        console.log(listaFilhos);
+
+        console.log();
 
     </script>
 
