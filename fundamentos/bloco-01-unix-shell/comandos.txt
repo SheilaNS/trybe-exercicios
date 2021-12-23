@@ -1,0 +1,14 @@
+*** COMANDOS GERAIS ***
+
+ctrl alt t: para abrir o terminal
+ls: lista todos os arquivos e diretórios dentro do diretório atual
+ls -a: lista todos os arquivos e diretórios + os arquivos ocultos
+cd <diretório>:entre no diretório que deseja entrar, significa change directory
+cd /: para entrar no diretório raiz do computador
+cd .: referencia o próprio diretório em que estou
+cd ..: volta para o diretório pai(anterior and que estou)
+clear: limpa a tela do terminal
+mk dir <nome>: cria um novo diretório, significa make directory
+pwd: mostra o endereço completo do diretório que estou
+
+*DICA: a tecla Tab autocompleta a palavra que você deseja digitar.

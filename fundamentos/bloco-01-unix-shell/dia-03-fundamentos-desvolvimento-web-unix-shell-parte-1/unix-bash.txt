@@ -1,0 +1,44 @@
+Unix é um Sistema Operacional (SO) lançado em 1969, base dos principais SOs no mercado hoje.
+* Quais os seus principais componentes?
+* Quais suas variações?
+* Arquivos e processos, o que são?
+* Qual sua estrutura de diretórios?
+* O que é o terminal?
+* Comandos executados no Shell.
+
+A linguagem C é o pai do Unix. Desenvolvido por Ken Thompson e Dennis Ritchie.
+Foi o primeiro a oferecer suporte a multiusuários, onde vários usuários podem utilizar simultaneamente o mesmo computador sem interferência entre eles.
+É multitarefas, permitindo que o usuário realize várias tarefas ao mesmo tempo.
+Tem portabilidade, podendo ser adaptado aos mais diversos sistemas computacionais sem muito esforço.
+
+O unix possui 3 níveis: o kernel, o shell e os aplicativos.
+
+KERNEL: é o responsável pela interação entre hardware(componentes do computador e seus periféricos) e software(programas).
+Ele é o núcleo do sistema. Ele gerencia os recursos do sistema e permite que os programas façam uso dele(recursos).
+Ele começa a funcionar assim que o computador é ligado. Nesse momento, ele inicia a detecção de todo hardware necessário para o funcionamento da máquina.
+Em seguida, o SO é carregado e, apoś o login do usuário, o kernel passa a administrar as principais funções dentro do SO, incluindo o gerenciamento de memória, de processos e de arquivos.
+
+SHELL: é a interface entre o SO, o usuário(você) e o núcleo do sistema(kernel).
+É o primeiro processo executado após o login. Em geral, ele usa uma interface de linha de comando, ou uma interface gráfica de usuário.
+Sua função é ler a linha de comando, interpretar seu significado, executar o comando e devolver o resultado para o usuário. 
+Existem vários tipos de shell, mas os principais são o SH, BASH, CSH, TCSH e o ZSH.
+
+APLICATIVOS: são os softwares que os usuários utilizam e a maioria dos comandos do unix.
+
+Outros pontos importantes do unix: processos e arquivos.
+Processo é tudo que fazemos no unix. Cada tarefa ou comando é interpretado pelo unix como sendo um processo.
+Cada processo tem um identificador único, o PID(process identifyer), que possui algumas informações como o usuário proprietário, sessão do shell, estado atual(funcionando, suspenso ou aguardando), linha de comando utilizada, etc.
+Arquivos, tudo é um arquivo no unix. Diretórios, arquivos e dispositivos são arquivos. Eles são organizados em uma hierarquia de raiz, onde seu nível mais alto é o diretório raiz, o root ou /.
+Todos os outros arquivos e diretórios existem a baixo do root. Cada arquivo possui uma série de informações como tipo, permissões, dono, grupo, tamanho, data e hora da última modificação e nome.
+Abaixo do root temos:
+- BOOT: arquivos de configuração para inicialização
+- BIN: aplicativos binários
+- DEV: arquivos do dipositivo
+- ETC: scripts de inicialização
+- HOME: diretórios home para diferentes usuários
+- PROC: diretório dinâmico especial que mantém informação sobre o estado de um sistema, incluindo os processos atualmente executados
+- ROOT:  diretório home do usuário root
+- SBIN: binários do sistema importantes
+- TMP: arquivos temporários
+- USR: aplicativos e arquivos que são na maior parte dispiníveis ao acesso de todos os usuários
+- VAR: arquivos variáveis como logs e banco de dados
