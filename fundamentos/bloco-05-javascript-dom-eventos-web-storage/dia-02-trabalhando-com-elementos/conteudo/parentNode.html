@@ -77,7 +77,11 @@
             Remover irmaoDeOndeVoceEsta
         */
 
-        let removeFilho = primeiroFilho; 
+        let filhosDoPai = pai.childNodes;
+        filhosDoPai.removeChildren();
+
+
+/*         let removeFilho = primeiroFilho; 
         removeFilho.remove();
         removeFilho = document.querySelector('#segundoEUltimoFilhoDoFilho');
         removeFilho.remove();
@@ -92,7 +96,7 @@
         removeFilho = document.querySelector('#irmaoDeOndeVoceEsta');
         removeFilho.remove();
         
-
+ */
 
         console.log();
 
