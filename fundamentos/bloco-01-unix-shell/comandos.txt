@@ -12,3 +12,48 @@ mk dir <nome>: cria um novo diretório, significa make directory
 pwd: mostra o endereço completo do diretório que estou
 
 *DICA: a tecla Tab autocompleta a palavra que você deseja digitar.
+
+*** COMANDOS DE MANIPULAÇÃO DE ARQUIVOS ***
+
+cp <arquivo que quer copiar> <nome do arquivo copiado>: copia um arquivo
+cat <arquivo>: mostra o conteúdo do arquivo, significa concatenate
+mv <arquivo> <caminho para onde quer mover o arquivo>: move o arquivo para um endereço desejado, significa move
+rm <arquivo>: apaga o arquivo, significa remove
+rmdir <diretório>:apaga um diretório, significa remove directory
+    Esse comando só funciona se o diretório estiver vazio
+rm -rf <diretório>: força apagar o diretório, mesmo não estando vazio
+
+*** COMANDO DE VISUALIZAÇÃO E BUSCAS ***
+
+less <arquivo>: mostra o conteúdo do arquivo de forma paginada, de acordo com o tamanho da tela do terminal
+    para navegar nas páginas use a tecla espaço
+    para sair da visualização do conteúdo, aperte a tecla Q
+head <arquivo>: mostra os 10 primeiros valores/linhas, por padrão, ele motra 10
+    head -5 <arquivo>: mostra os 5 primeiros valores/linhas
+tail <arquivo>: mostra os 10 últimos valores/linhas
+    tail -5 <arquivo>: mostra as 5 últimos valores/linhas
+*Dentro da visualização do comando less <arquivo> => /<palavra procurada>: mostra todos os valores que a palavra aparece
+    para navegar entre as palavras encontradas, basta pressionar a tecla N
+    quando as palavras encontradas acabam, o teminal pede para pressionar a tecla enter
+    para finalizar a visualização do conteúdo, pressione a tecla Q
+grep <palavra> <arquivo>: outra forma de fazer buscas dentro de um arquivo. Esse comando é case sensitive
+    para fazer o comando ignorar o case sentitive, basta adicionas -i entre o comando e a palavra procurada, por exemplo, grep -i <palavra> <arquivo>
+grep -i 'frase procurada' <arquivo>: procura por uma frase inteira dentro do arquivo
+grep -iv 'frase procurada' <arquivo>: retorna todos os alores que ão correspondem a frase procurada
+grep -in 'frase procurada' <arquivo>: retorna o valor procurado com o número da linha dele
+grep -ic 'frase procurada' <arquivo>: retorna a quantidade de vezes que o valor é repetido dentro do arquivo
+wc <arquivo>: retorna 3 valores sobre o arquivo, significa word count
+    o primeiro é a quantidade de linhas que o arquivo tem, -l para ter apenas a quantidade de linhas, significa lines
+    o segundo é a quantidade de palavras que o arquivo tem, -w para ter apenas a quantidade de palavras, significa words
+    o terceiro é a quantidade de caracteres que o arquivo tem, -c para ter apenas a quantidade de caracteres, significa characters
+
+*** COMANDOS DE AJUDA ***
+
+ls *: retorna tudo dentro do local onde estou, diretórios, subdiretórios e seus arquivos internos também
+ls ?<resto da palavra procurada>: retorna o que tem dentro do diretório procurado sem saber a primeira letra do nome do diretório
+man <comando>: retorna o manual sobre o comando procurado e todas as suas informações e suas variações
+whatis <comando>: retorna o que o camando faz
+apropos <função desejada>: retorna todos os comando que executam a função desejada
+
+DICA: para nomear arquivos, evite usar espaços entre as palavras
+    coloque sempre a extensão do arquivo na hora da sua criação
