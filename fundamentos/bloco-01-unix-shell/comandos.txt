@@ -3,11 +3,13 @@
 ctrl alt t: para abrir o terminal
 ls: lista todos os arquivos e diretórios dentro do diretório atual
 ls -a: lista todos os arquivos e diretórios + os arquivos ocultos
+ls -l: mostra a lista de arquivos com informações detalhadas, permissões, usuário proprietário, data e hora da última modificação e nome do arquivo
 cd <diretório>:entre no diretório que deseja entrar, significa change directory
 cd /: para entrar no diretório raiz do computador
 cd .: referencia o próprio diretório em que estou
 cd ..: volta para o diretório pai(anterior and que estou)
 clear: limpa a tela do terminal
+ctrl l: limpa a tela do terminal, mas não apaga os comandos anteriores, ele joga eles para cima
 mk dir <nome>: cria um novo diretório, significa make directory
 pwd: mostra o endereço completo do diretório que estou
 
@@ -16,8 +18,11 @@ pwd: mostra o endereço completo do diretório que estou
 *** COMANDOS DE MANIPULAÇÃO DE ARQUIVOS ***
 
 cp <arquivo que quer copiar> <nome do arquivo copiado>: copia um arquivo
+touch <nome>.<extensão>: cria um arquivo vazio
 cat <arquivo>: mostra o conteúdo do arquivo, significa concatenate
+
 mv <arquivo> <caminho para onde quer mover o arquivo>: move o arquivo para um endereço desejado, significa move
+    esse comando também serve para renomear arquivos
 rm <arquivo>: apaga o arquivo, significa remove
 rmdir <diretório>:apaga um diretório, significa remove directory
     Esse comando só funciona se o diretório estiver vazio
