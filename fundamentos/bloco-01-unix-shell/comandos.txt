@@ -4,14 +4,37 @@ ctrl alt t: para abrir o terminal
 ls: lista todos os arquivos e diretórios dentro do diretório atual
 ls -a: lista todos os arquivos e diretórios + os arquivos ocultos
 ls -l: mostra a lista de arquivos com informações detalhadas, permissões, usuário proprietário, data e hora da última modificação e nome do arquivo
+
+    Permissões | Links  | Proprietário | Grupo | Tamanho | Data e Hora   | Nome
+    -----------|--------|--------------|-------|---------|---------------|---------
+    drwxr-xr-x | 2      | root         | root  | 4096    | Out 19 09:10  | composer/
+
+    Permissões => É possível verificar o tipo do item e nível de permissão para Leitura, Escrita e Execução de item ou diretório;
+    Links => Número de ligações que o item possui, no caso do diretório, número de subdiretórios que possui;
+    Proprietário => Quem é a pessoa dona, quem criou. É o diretório padrão da pessoa usuária, o home;
+    Grupo => Grupo ao qual pertence o item ou diretório. Utilizado para dar permissões à outras pessoas;
+    Tamanho => Em Bytes;
+    Data e Hora => Momento em que foi criado ou última modificação;
+    Nome => Nome do item ou diretório;
+
 cd <diretório>:entre no diretório que deseja entrar, significa change directory
 cd /: para entrar no diretório raiz do computador
+cd ~: vai para o diretório home
 cd .: referencia o próprio diretório em que estou
 cd ..: volta para o diretório pai(anterior and que estou)
 clear: limpa a tela do terminal
 ctrl l: limpa a tela do terminal, mas não apaga os comandos anteriores, ele joga eles para cima
 mk dir <nome>: cria um novo diretório, significa make directory
 pwd: mostra o endereço completo do diretório que estou
+whoami: retorna o nome do usuário atual
+who: retorna qual usuário esta acessando o terminal
+sudo su: altera o usuário para o usuário root(#)
+    para sair desse usuário, basta digitar exit
+sudo: significa super user do. Ele executa o comando como um super usuário
+history: retorna o histórico de comandos que foram executados.
+    history | tail: para retornar os últimos 10 comandos realizados
+echo "<texto>": imprime na tela do terminal o texto ou mensagem que queremos
+    echo "<texto>" > <arquivo>: coloca o texto dentro de um arquivo
 
 *DICA: a tecla Tab autocompleta a palavra que você deseja digitar.
 
@@ -20,7 +43,12 @@ pwd: mostra o endereço completo do diretório que estou
 cp <arquivo que quer copiar> <nome do arquivo copiado>: copia um arquivo
 touch <nome>.<extensão>: cria um arquivo vazio
 cat <arquivo>: mostra o conteúdo do arquivo, significa concatenate
-
+    cat vazio recebe valores como inputs. Para sair do modo input, basta dar o comando ctrl D.
+    cat > <arquivo>: adiciona/grava valores dentro do arquivo desejado.
+    cat >> <arquivo>: acrescenta valores dentro do arquivo.
+    cat <arquivo1> <arquivo2> > <arquivonovo>: junta os valores dos arquivos 1 e 2 em um novo arquivo
+sort < <arquivo>: retorna os valores do arquivo no terminal de forma ordenada sem alterar o arquivo
+    sort < <arquivo> > <novoarquivo>: cria um novo arquivo que recebe os valores ordenados do arquivo
 mv <arquivo> <caminho para onde quer mover o arquivo>: move o arquivo para um endereço desejado, significa move
     esse comando também serve para renomear arquivos
 rm <arquivo>: apaga o arquivo, significa remove
@@ -51,6 +79,12 @@ wc <arquivo>: retorna 3 valores sobre o arquivo, significa word count
     o primeiro é a quantidade de linhas que o arquivo tem, -l para ter apenas a quantidade de linhas, significa lines
     o segundo é a quantidade de palavras que o arquivo tem, -w para ter apenas a quantidade de palavras, significa words
     o terceiro é a quantidade de caracteres que o arquivo tem, -c para ter apenas a quantidade de caracteres, significa characters
+find . -<parâmetro> <nome/tipo>: retorna diretórios ou arquivos de acordo com o parâmentro passado.
+    .: é o caminho do arquivo onde desejamos fazer a busca. Se for em uma pasta em expecífico, basta colocar ./<caminho>
+    name: retorna os arquivos procurados com o nome, por exemplo, find . -name "*.txt", retorna todos os arquivos .txt
+    date: retorna os arquivos procurados por data de última modificação
+    size: retorna os arquivos por tamanho
+    type: retorna os arquivos por tipo, d para diretório e f para arquivos comuns(file)
 
 *** COMANDOS DE AJUDA ***
 
@@ -59,6 +93,65 @@ ls ?<resto da palavra procurada>: retorna o que tem dentro do diretório procura
 man <comando>: retorna o manual sobre o comando procurado e todas as suas informações e suas variações
 whatis <comando>: retorna o que o camando faz
 apropos <função desejada>: retorna todos os comando que executam a função desejada
+| => o pipe junta comandos em uma linha só. Por Exemplo, who | sort, retorna a lista de usuários de forma ordenada
 
 DICA: para nomear arquivos, evite usar espaços entre as palavras
     coloque sempre a extensão do arquivo na hora da sua criação
+
+*** CONTROLE DE ACESSO E PERMISSÕES ***
+
+O código pode ser dividido em 4 partes:
+- a peimeira parte mostra se é um arquivo comum ou diretório
+- a segunda parte mostra as permissões ao usuário
+- a terceira parte mostra as permissões aos grupos de usuários
+- a quarta parte mostra as permissões aos outros usuários
+
+-: no começo da sequencia mostra que é um arquivo comum. Se for um diretório, um d aparece em seu lugar
+r: mostra se a leitura do arquivo/diretório é permitida, significa read
+w: mostra se a modificação do arquivo/diretório é permitido, significa write
+x: mostra se o acesso ao arquivo/diretório é permitido pelo comando cd, significa execute
+
+chmod: altera as permissões do arquivo
+u: altera as permissões apenas do usuário
+g: altera as permições apenas dos grupos de usuários
+o: altera as permissões dos outros usuários
+a: altera as permissões de todos os grupos
+-: remove a permissão
++: adiciona a permissão
+=: não altera nada da permissão
+
+Por exemplo: chmod u-rw <arquivo>: retira as permissões rw do grupo de usuário
+
+De forma geral, podemos alterar as permissões de forma mais geral utilizando números ou códigos binários.
+
+rwx = 111 ( 7 | Acesso Total )
+r-- = 100 ( 4 | Somente Leitura )
+-w- = 010 ( 2 | Somente Escrita )
+--x = 001 ( 1 | Somente Execução )
+rw- = 110 ( 6 | Somente Leitura e Escrita )
+r-x = 101 ( 5 | Somente Leitura e Execução )
+-wx = 011 ( 3 | Somente Escrita e Execução )
+--- = 000 ( 0 | Todos Acessos Negados )
+
+Dessa forma podemos escrever o comando chmod da seguinte forma:
+chmod 766 <arquivo>
+Onde cada número representa a sequência de permissões de cada bloco de permissão.
+
+*** PROCESSOS E JOBS ***
+
+ps: retorna a lista de processos que estão sendo executados no exato momento
+
+Os processos são identificados pelo PID (process identifyer), que são únicos por processo.
+Eles podem estar em execução, em background ou suspensos.
+
+sleep <numero em segundos>: para o terminal por um determinado tempo
+    sleep <numero em segundos> &: executa o comando sleep em background
+    ctrl Z: suspende o processo que estiver rodando
+    bg: retoma o processo suspenso em background
+
+jobs: retorna uma lista dos processos que estão sendo executados juntamente com os seus status
+fg %<index do processo>: retoma o processo em primeiro plano(foreground)
+ctrl C: termina o processo em execução no primeiro plano
+kill %<index do processo>: termina o processo em background pelo seu número de index
+    kill <PID>: também termina o processo, mas usando o número do PID
+    kill -9 <PID>: força o fim do processo
