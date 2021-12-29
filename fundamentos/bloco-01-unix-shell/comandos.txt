@@ -35,6 +35,7 @@ history: retorna o histórico de comandos que foram executados.
     history | tail: para retornar os últimos 10 comandos realizados
 echo "<texto>": imprime na tela do terminal o texto ou mensagem que queremos
     echo "<texto>" > <arquivo>: coloca o texto dentro de um arquivo
+wget <url>: faz o download de uma determinada url
 
 *DICA: a tecla Tab autocompleta a palavra que você deseja digitar.
 
@@ -72,7 +73,7 @@ tail <arquivo>: mostra os 10 últimos valores/linhas
 grep <palavra> <arquivo>: outra forma de fazer buscas dentro de um arquivo. Esse comando é case sensitive
     para fazer o comando ignorar o case sentitive, basta adicionas -i entre o comando e a palavra procurada, por exemplo, grep -i <palavra> <arquivo>
 grep -i 'frase procurada' <arquivo>: procura por uma frase inteira dentro do arquivo
-grep -iv 'frase procurada' <arquivo>: retorna todos os alores que ão correspondem a frase procurada
+grep -iv 'frase procurada' <arquivo>: retorna todos os alores que não correspondem a frase procurada
 grep -in 'frase procurada' <arquivo>: retorna o valor procurado com o número da linha dele
 grep -ic 'frase procurada' <arquivo>: retorna a quantidade de vezes que o valor é repetido dentro do arquivo
 wc <arquivo>: retorna 3 valores sobre o arquivo, significa word count
@@ -140,6 +141,14 @@ Onde cada número representa a sequência de permissões de cada bloco de permis
 *** PROCESSOS E JOBS ***
 
 ps: retorna a lista de processos que estão sendo executados no exato momento
+ps auxw: retorna todos os processos que estão rodando no root também e seus respectivos números
+top: retorna a lista de processos e essa lista atualiza em tempo real
+    para sair do top, basta apertar a tecla Q
+    para terminar um processo, aperte a tecla k. O terminal vai perguntar qual o PID do processo que deseja terminar
+    atente-se em digitar o PID correto para não terminar o processo errado e aperte enter.
+    o terminal vai perguntar quali sinal você deseja enviar(como você quer encerrar o processo).
+    digite 15 para encerrar o processo de forma padrão ou 9 para forçar o encerramento
+<processo> &: realiza o processo em segundo plano
 
 Os processos são identificados pelo PID (process identifyer), que são únicos por processo.
 Eles podem estar em execução, em background ou suspensos.
@@ -151,6 +160,7 @@ sleep <numero em segundos>: para o terminal por um determinado tempo
 
 jobs: retorna uma lista dos processos que estão sendo executados juntamente com os seus status
 fg %<index do processo>: retoma o processo em primeiro plano(foreground)
+    funciona se não colocar o index também
 ctrl C: termina o processo em execução no primeiro plano
 kill %<index do processo>: termina o processo em background pelo seu número de index
     kill <PID>: também termina o processo, mas usando o número do PID
