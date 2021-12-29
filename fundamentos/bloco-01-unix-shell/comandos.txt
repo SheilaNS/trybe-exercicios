@@ -73,7 +73,7 @@ tail <arquivo>: mostra os 10 últimos valores/linhas
 grep <palavra> <arquivo>: outra forma de fazer buscas dentro de um arquivo. Esse comando é case sensitive
     para fazer o comando ignorar o case sentitive, basta adicionas -i entre o comando e a palavra procurada, por exemplo, grep -i <palavra> <arquivo>
 grep -i 'frase procurada' <arquivo>: procura por uma frase inteira dentro do arquivo
-grep -iv 'frase procurada' <arquivo>: retorna todos os alores que não correspondem a frase procurada
+grep -iv 'frase procurada' <arquivo>: retorna todos os valores que não correspondem a frase procurada
 grep -in 'frase procurada' <arquivo>: retorna o valor procurado com o número da linha dele
 grep -ic 'frase procurada' <arquivo>: retorna a quantidade de vezes que o valor é repetido dentro do arquivo
 wc <arquivo>: retorna 3 valores sobre o arquivo, significa word count
