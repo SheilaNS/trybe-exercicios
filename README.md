@@ -19,3 +19,10 @@ Esse conteúdo é executado em um sistema operacional Linux Ubuntu.
     </ul>
     <li>unix_tests: arquivos e comandos praticados nos exercícios do bloco 01</li>
 </ul>
+
+### Bloco 02: Git, GitHub e Internet
+<ul>
+    <li>dia 01: Git & GitHub - O que é e para que serve</li>
+    <li>dia 02: Git & GitHub - Entendendo os comandos</li>
+    <li>dia 03: Internet - Entendendo como ela funciona</li>
+</ul>
