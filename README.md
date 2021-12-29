@@ -16,4 +16,6 @@ Esse conteúdo é executado em um sistema operacional Linux Ubuntu.
     <ul>
         <li>fixando.txt: explicações e comandos usados no conteúdo do dia</li>
         <li>nomes.txt: arquivo criado na prática de comandos de manipulação de arquivos</li>
+    </ul>
+    <li>unix_tests: arquivos e comandos praticados nos exercícios do bloco 01</li>
 </ul>
