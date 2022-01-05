@@ -7,6 +7,7 @@ function createStateList() {
     const option = document.createElement('option');
     option.value = stateInitials[i];
     option.innerText = stateOptions[i];
+    option.classList.add('state-option');
     state.appendChild(option);
   }
 }
@@ -26,25 +27,49 @@ function checkDate() {
     alert('Ano não pode ser negativo');
   }
 }
-const tamanhoNome = document.getElementById('fullName').maxLength;
-const tamanhoEmail = document.getElementById('email').maxLength;
 inputDate.addEventListener('change', checkDate);
+const homeType = document.getElementsByName('homeType');
 
 function sendInfo(event) {
   const nome = document.getElementById('fullName');
   const email = document.getElementById('email');
+  const cpf = document.getElementById('cpf');
+  const address = document.getElementById('address');
+  const city = document.getElementById('city');
   event.preventDefault();
-  checkInfo(nome, tamanhoNome);
-  checkInfo(email, tamanhoEmail);
+  checkInfo(nome, 40);
+  checkInfo(email, 50);
+  checkInfo(cpf, 11);
+  checkInfo(address, 200);
+  checkInfo(city, 28);
+  checkSelected(state.childNodes);
+  checkChecked(homeType);
 }
 
 function checkInfo(valor, tamanho) {
-  if (valor === '') {
+  if (valor.value === '') {
     alert('Todos os campos devem ser preenchidos');
   }
-  console.log(tamanho);
   if (valor.value.length > tamanho) {
-    alert(`${valor.parentNode.innerText} não pode ser maior que ${tamanho}`);
+    alert(`O campo ${valor.parentNode.innerText} não pode ter mais que ${tamanho} caracteres`);
+  }
+}
+
+function checkSelected(array) {
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i].selected) {
+      return array[i].innerText;
+    }
+  }
+}
+
+function checkChecked(array) {
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i].checked) {
+      return array[i].value;
+    } else {
+      return alert('Escolha o tipo de moradia');
+    }
   }
 }
 
