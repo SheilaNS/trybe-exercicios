@@ -12,3 +12,19 @@ function createStateList() {
 }
 
 window.onload = createStateList;
+
+const inputDate = document.getElementById('startDate');
+function checkDate() {
+  const array = inputDate.value.split('/');
+  if (array[0] <= 0 || array[0] > 31) {
+    alert('Data não pode ser menos que 0 ou maior que 31');
+  }
+  if (array[1] <= 0 || array[1] > 12) {
+    alert('Mês não pode ser menor que 0 ou maior que 12');
+  }
+  if (array[2] <= 0) {
+    alert('Ano não pode ser negativo');
+  }
+}
+
+inputDate.addEventListener('change', checkDate);

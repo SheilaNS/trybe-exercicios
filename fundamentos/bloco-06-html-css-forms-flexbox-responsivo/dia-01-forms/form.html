@@ -49,8 +49,17 @@
         </fieldset>
         <fieldset class="last-job-info">
             <legend>Dados do seu último emprego</legend>
-            <label for="resume" class="resume">
-                <textarea name="resume" id="resume" rows="10"></textarea>
+            <label for="resume" class="resume">Resumo do currículo:
+                <textarea name="resume" id="resume" rows="10" maxlength="1000" required></textarea>
+            </label>
+            <label for="cargo" class="cargo">Cargo:
+                <input type="text" name="cargo" id="cargo" maxlength="40" required>
+            </label>
+            <label for="descrip" class="description">Descrição do cargo:
+                <input type="text" name="descrip" id="descrip" maxlength="500" required>
+            </label>
+            <label for="startDate" class="startDate">Data de início:
+                <input type="text" name="startDate" id="startDate" maxlength="10" placeholder="dd/mm/aaaa" required autocomplete="off">
             </label>
         </fieldset>
     </form>
