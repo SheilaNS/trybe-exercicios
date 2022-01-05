@@ -15,9 +15,14 @@
   padding-bottom: 20px;
 }
 
-fieldset {
+form {
   margin: 20px auto;
   width: 80%;
+}
+
+fieldset {
+  margin: 20px auto;
+  width: 100%;
 }
 
 legend {
@@ -36,4 +41,19 @@ label {
 
 #resume {
   width: 100%;
+}
+
+.resume {
+  height: 200px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+button {
+  width: 50px;
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
