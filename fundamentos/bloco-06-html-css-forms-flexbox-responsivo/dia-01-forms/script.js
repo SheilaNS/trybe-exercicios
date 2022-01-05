@@ -26,5 +26,27 @@ function checkDate() {
     alert('Ano não pode ser negativo');
   }
 }
-
+const tamanhoNome = document.getElementById('fullName').maxLength;
+const tamanhoEmail = document.getElementById('email').maxLength;
 inputDate.addEventListener('change', checkDate);
+
+function sendInfo(event) {
+  const nome = document.getElementById('fullName');
+  const email = document.getElementById('email');
+  event.preventDefault();
+  checkInfo(nome, tamanhoNome);
+  checkInfo(email, tamanhoEmail);
+}
+
+function checkInfo(valor, tamanho) {
+  if (valor === '') {
+    alert('Todos os campos devem ser preenchidos');
+  }
+  console.log(tamanho);
+  if (valor.value.length > tamanho) {
+    alert(`${valor.parentNode.innerText} não pode ser maior que ${tamanho}`);
+  }
+}
+
+const submitBotton = document.getElementById('submit-button');
+submitBotton.addEventListener('click', sendInfo);
