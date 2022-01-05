@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de currículo</title>
+</head>
+<body>
+    <header class="main-header">
+        <h1>Formulário de Currículo</h1>
+        <p>Preencha seus dados e crie seu currículo de forma fácil.</p>
+    </header>
+    <form action="" method="get">
+        <fieldset class="personal-info">
+            <legend>Dados pessoais</legend>
+            <label for="fullName" class="full-name"> 
+                Nome completo:
+                <input type="text" name="fullName" id="fullName" maxlength="40" required>
+            </label>
+            <label for="email" class="email">
+                E-mail:
+                <input type="email" name="email" id="email" maxlength="50" required>
+            </label>
+            <label for="cpf" class="cpf">
+                CPF:
+                <input type="text" name="cpf" id="cpf" maxlength="11" required placeholder="Somente os números">
+            </label>
+            <label for="address" class="address">
+                Endereço:
+                <input type="text" name="address" id="address" maxlength="200" required>
+            </label>
+            <label for="city" class="city">
+                Cidade:
+                <input type="text" name="city" id="city">
+            </label>
+            <label for="state" class="state">
+                Estado:
+                <select name="state" id="state" required>
+                </select>
+            </label>
+            <label for="house" class="home-type">
+                <input type="radio" name="homeType" id="house"> Casa
+            </label>
+            <label for="apart" class="home-type">
+                <input type="radio" name="homeType" id="apart"> Apartamento
+            </label>
+        </fieldset>
+        <fieldset class="last-job-info">
+            <legend>Dados do seu último emprego</legend>
+            <label for="resume" class="resume">
+                <textarea name="resume" id="resume" rows="10"></textarea>
+            </label>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

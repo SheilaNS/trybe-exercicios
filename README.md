@@ -40,6 +40,9 @@ Esse conteúdo é executado em um sistema operacional Linux Ubuntu.
             <li>fixandoParteIV.html: fixando o conteúdo da parte IV (preventDefault)</li>
             <li>script2.js: fonte JavaScript da página fixandoParteIV.html</li>
         </ul>
+        <li>form.html: exercício do dia - criando um formulário de currículo</li>
+        <li>script.js: fonte JavaScript da página form.html</li>
+        <li>style.css: fonte CSS da página form.html</li>
     </ul>
     <li>anotacoes-gerais.txt: anotações gerais do bloco 06</li>
 </ul>

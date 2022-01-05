@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+.main-header {
+  margin: 20px auto;
+  text-align: center;
+  width: 80%;
+}
+
+.main-header h1 {
+  padding-bottom: 20px;
+}
+
+fieldset {
+  margin: 20px auto;
+  width: 80%;
+}
+
+legend {
+  margin: 10px;
+}
+
+label {
+  display: block;
+  padding: 5px 20px;
+  height: 40px;
+}
+
+.home-type {
+  display: inline-block;
+}
+
+#resume {
+  width: 100%;
+}
