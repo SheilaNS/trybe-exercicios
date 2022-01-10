@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="node_modules/just-validate/dist/just-validate.production.min.js"></script>
   <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
   <script src="https://kit.fontawesome.com/7555cfc705.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
@@ -18,7 +19,7 @@
     <p class="subtitle">Preencha seus dados e crie seu currículo de forma fácil.</p>
   </header>
   <div class="form-container">
-    <form action="" method="get">
+    <form action="" method="get" id="form">
       <div class="field dados-pessoais">
         <p class="dados">Dados pessoais</p>
         <label for="fullName" class="full-name label">
@@ -59,7 +60,7 @@
             </div>
           </div>
         </label>
-        <div class="home-type-container control">
+        <div class="home-type-container control" id="radio-group">
           <p class="label">Tipo de residência:</p>
           <label for="house" class="home-type radio">
             <input type="radio" name="homeType" value="Casa"> Casa
