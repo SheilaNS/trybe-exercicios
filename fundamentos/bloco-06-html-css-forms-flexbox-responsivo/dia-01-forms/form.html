@@ -16,55 +16,78 @@
   </header>
   <div class="form-container">
     <form action="" method="get">
-      <div class="dados-pessoais">
-        <p>Dados pessoais</p>
+      <fieldset class="dados-pessoais">
+        <legend>Dados pessoais</legend>
         <label for="fullName" class="full-name">
           Nome completo
+          <br>
           <input type="text" name="fullName" id="fullName">
         </label>
+        <br>
         <label for="email" class="email">
           E-mail
-            <input type="email" name="email" id="email">
+          <br>
+          <input type="email" name="email" id="email">
         </label>
+        <br>
         <label for="cpf" class="cpf">
           CPF
+          <br>
           <input type="text" name="cpf" id="cpf" placeholder="Somente os números">
         </label>
+        <br>
         <label for="address" class="address">
           Endereço
+          <br>
           <input type="text" name="address" id="address">
         </label>
+        <br>
         <label for="city" class="city">
           Cidade
+          <br>
           <input type="text" name="city" id="city">
         </label>
+        <br>
         <label for="state" class="state">Estado
+          <br>
           <select name="state" id="state" required>
           </select>
         </label>
-          <p>Tipo de residência:</p>
-          <label for="house" class="home-type">
-            <input type="radio" name="homeType" value="Casa"> Casa
-          </label>
-          <label for="apart" class="home-type">
-            <input type="radio" name="homeType" value="Apartamento"> Apartamento
-          </label>
-      </div>
-      <div class="last-job-info">
-        <p>Dados do seu último emprego</p>
-        <label for="resume" class="resume">Resumo do currículo
+        <br>
+        <p>Tipo de residência:</p>
+        <label for="house" class="home-type">
+          <input type="radio" name="homeType" value="Casa"> Casa
+        </label>
+        <label for="apart" class="home-type">
+          <input type="radio" name="homeType" value="Apartamento"> Apartamento
+        </label>
+      </fieldset>
+      <fieldset class="last-job-info">
+        <legend>Dados do seu último emprego</legend>
+        <label for="resume" class="resume">
+          Resumo do currículo
+          <br>
           <textarea name="resume" id="resume" rows="10"></textarea>
         </label>
-        <label for="cargo" class="cargo">Cargo
+        <br>
+        <label for="cargo" class="cargo">
+          Cargo
+          <br>
           <input type="text" name="cargo" id="cargo">
         </label>
-        <label for="descrip" class="description">Descrição do cargo
+        <br>
+        <label for="descrip" class="description">
+          Descrição do cargo
+          <br>
           <input type="text" name="descrip" id="descrip">
         </label>
-        <label for="startDate" class="startDate">Data de início
+        <br>
+        <label for="startDate" class="startDate">
+          Data de início
+          <br>
           <input type="text" name="startDate" id="startDate" placeholder="dd/mm/aaaa" autocomplete="off">
         </label>
-      </div>
+      </fieldset>
       <div class="buttons">
         <button type="submit" name="submit-button" id="submit-button">Enviar</button>
         <button type="reset" name="reset-button" id="reset-button">Limpar</button>
