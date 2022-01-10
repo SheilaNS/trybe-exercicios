@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+  <script src="https://kit.fontawesome.com/7555cfc705.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário de currículo</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <h1 class="title is-1">Formulário de Currículo</h1>
+    <p class="subtitle">Preencha seus dados e crie seu currículo de forma fácil.</p>
+  </header>
+  <div class="form-container">
+    <form action="" method="get">
+      <div class="field dados-pessoais">
+        <p class="dados">Dados pessoais</p>
+        <label for="fullName" class="full-name label">
+          Nome completo
+          <p class="control has-icons-left">
+            <input class="input" type="text" name="fullName" id="fullName">
+            <span class="icon is-medium is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </p>
+        </label>
+        <label for="email" class="email label">
+          E-mail
+          <p class="control has-icons-left">
+            <input class="input" type="email" name="email" id="email">
+            <span class="icon is-medium is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </p>
+        </label>
+        <label for="cpf" class="cpf label">
+          CPF
+          <input class="input" type="text" name="cpf" id="cpf" placeholder="Somente os números">
+        </label>
+        <label for="address" class="address label">
+          Endereço
+          <input class="input" type="text" name="address" id="address">
+        </label>
+        <label for="city" class="city label">
+          Cidade
+          <input class="input" type="text" name="city" id="city">
+        </label>
+        <label for="state" class="state label">Estado
+          <div class="control">
+            <div class="select">
+              <select name="state" id="state" required>
+              </select>
+            </div>
+          </div>
+        </label>
+        <div class="home-type-container control">
+          <p class="label">Tipo de residência:</p>
+          <label for="house" class="home-type radio">
+            <input type="radio" name="homeType" value="Casa"> Casa
+          </label>
+          <label for="apart" class="home-type radio">
+            <input type="radio" name="homeType" value="Apartamento"> Apartamento
+          </label>
+        </div>
+      </div>
+      <div class="last-job-info field">
+        <p>Dados do seu último emprego</p>
+        <label for="resume" class="resume label">Resumo do currículo
+          <textarea class="textarea is-small has-fixed-size" name="resume" id="resume" rows="10"></textarea>
+        </label>
+        <label for="cargo" class="cargo label">Cargo
+          <input class="input" type="text" name="cargo" id="cargo">
+        </label>
+        <label for="descrip" class="description label">Descrição do cargo
+          <input class="input" type="text" name="descrip" id="descrip">
+        </label>
+        <label for="startDate" class="startDate label">Data de início
+          <input class="input" type="text" name="startDate" id="startDate" placeholder="dd/mm/aaaa" autocomplete="off">
+        </label>
+      </div>
+      <div class="buttons field is-grouped is-grouped-centered">
+        <div class="control">
+          <button class="button is-primary" type="submit" name="submit-button" id="submit-button">Enviar</button>
+          <button class="button is-warning" type="reset" name="reset-button" id="reset-button">Limpar</button>
+        </div>
+      </div>
+    </form>
+    <div id="dados-form"></div>
+  </div>
+  <script src="dist/js/DatePickerX.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

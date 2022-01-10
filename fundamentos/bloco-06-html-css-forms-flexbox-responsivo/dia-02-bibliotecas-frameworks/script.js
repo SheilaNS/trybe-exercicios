@@ -13,9 +13,15 @@ function createStateList() {
 }
 
 window.onload = createStateList;
-
+/* window.DatePickerX.setDefaults({
+  mondayFirst: true,
+  format: dd/mm/yyyy
+  });
+ */
 const homeType = document.getElementsByName('homeType');
 const dadosCorretos = document.getElementById('dados-form');
+const inputDate = document.getElementById('startDate').DatePickerX.init();
+let dataOK = true;
 
 function sendInfo(event) {
   event.preventDefault();
@@ -128,9 +134,8 @@ function sendInfo(event) {
     return alert(`O campo Descrição do cargo não pode ter mais que 500 caracteres`);
   }
 
-  const inputDate = document.getElementById('startDate');
-  let dataOK = true;
-  const arrayData = inputDate.value.split('/');
+  // Campo data de início
+/*   const arrayData = inputDate.value.split('/');
   if (arrayData[0] <= 0 || arrayData[0] > 31) {
     dataOK = false;
     alert('Data não pode ser menos que 0 ou maior que 31');
@@ -143,7 +148,7 @@ function sendInfo(event) {
     dataOK = false;
     alert('Ano não pode ser negativo');
   }
-
+ */
 
   if (nomeOK && emailOK && cpfOK && addressOK && cityOK && estadoOK && homeOK && resumoOK && cargoOK && dataOK) {
     const pNome = document.createElement('p');
