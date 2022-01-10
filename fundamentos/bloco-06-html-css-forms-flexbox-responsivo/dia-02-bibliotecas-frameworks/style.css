@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+label {
+  margin: 10px 0;
+}
 header {
   text-align: center;
   height: 150px;
@@ -13,10 +16,6 @@ header {
 header h1 {
   padding-top: 30px;
   padding-bottom: 5px;
-}
-
-input[type="text"], input[type="email"], textarea, select {
-  width: 100%;
 }
 
 .form-container {
@@ -44,17 +43,6 @@ input[type="text"], input[type="email"], textarea, select {
 
 .last-job-info p {
   font-size: 20px;
-}
-
-.buttons {
-  margin: auto;
-  text-align: center;
-  width: 200px;
-}
-
-.buttons button{
-  width: 50px;
-  height: 30px;
 }
 
 #dados-form {

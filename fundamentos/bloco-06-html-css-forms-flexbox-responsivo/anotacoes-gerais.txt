@@ -53,3 +53,14 @@ Dentro da tag label:
     for: recebe sempre o nome do id do imput que ele guarda
 
 event.preventDefault(): evita o comportamento padrão do navegador sobre alguma ação disparada pelo evento
+
+*** DIA 02: Bibliotecas JavaScript e Frameworks CSS ***
+
+BIBLIOTECAS: são códigos reitilizáveis para diminuir problemas de compatibilidade em navegadores e para facilitar a uso da liguagem de programação
+ex. moment.js - bom para trabalhar com datas, instala pelo npm e usa um require("nome da biblioteca") para usar abiblioteca
+ex. cheet.js - têm vários easterEggs, importa o script pelo HTML
+
+Bootstrap: é um framework CSS que ajuda a aplicar desing responsivo ao nosso site.
+    getbootstrap.com - download do compiled CSS and JS - adicionar ele dentro da pasta onde está o projeto desejado
+    o bootstrap exije a biblioteca JQuery (jquery.com) - download do arquivo dentro da pasta do projeto também
+    o script do JQuery precisa ser declarado no HTML antes de script do bootstrap
