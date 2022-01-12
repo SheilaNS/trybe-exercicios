@@ -44,5 +44,18 @@ Esse conteúdo é executado em um sistema operacional Linux Ubuntu.
         <li>script.js: fonte JavaScript da página form.html</li>
         <li>style.css: fonte CSS da página form.html</li>
     </ul>
+    <li>dia 02: Bibliotecas JavaScript e Frameworks CSS</li>
+    <ul>
+      <li>dist: pasta de arquivos do DatePeckerX (validador de datas)</li>
+      <li>node_modules: pasta de arquivos</li>
+      <ul>
+        <li>bulma: pasta de arquivos do bulma (framework CSS)</li>
+        <li>just-validate: pasta de arquivos do JustValidate (biblioteca JavaScript para validação de formulários)</li>
+      </ul>
+      <li>package-lock.json: arquivo JSON que define as dependências do site</li>
+      <li>form.html: exercício do dia - aplicando frameworks e bibliotecas</li>
+      <li>script.js: fonte JavaScript da página form.html</li>
+      <li>style.css: fonte CSS da página form.html</li>
+    </ul>
     <li>anotacoes-gerais.txt: anotações gerais do bloco 06</li>
 </ul>

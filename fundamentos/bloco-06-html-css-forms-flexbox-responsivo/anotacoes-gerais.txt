@@ -64,3 +64,13 @@ Bootstrap: é um framework CSS que ajuda a aplicar desing responsivo ao nosso si
     getbootstrap.com - download do compiled CSS and JS - adicionar ele dentro da pasta onde está o projeto desejado
     o bootstrap exije a biblioteca JQuery (jquery.com) - download do arquivo dentro da pasta do projeto também
     o script do JQuery precisa ser declarado no HTML antes de script do bootstrap
+
+*** DIA 03: Introdução e CSS Flexbox - Parte 1 ***
+
+O flexbox é disponível no CSS, é aplicado na propriedade display.
+É aplicado no container e em seus itens e serve para desenvolver um layout flexível, melhorando a dispozição dos itens no container pai.
+Existem dois principais eixos no flexbox: o main axis (eixo principal) e o cross axis (eixo transversal). 
+Eles controlam como os itens dentro do container flex ficam dispostos.
+
+Main Axis: eixo horizoltal
+Cros Axix: eixo vertical 
