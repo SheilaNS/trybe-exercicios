@@ -1,0 +1,21 @@
+*** DIA 01: JavaScript ES6 - let, const, arrow functions e template literals ***
+
+ESCOPO: é o espaço en que o código é escrito, p.e. em uma função, o espaço entre as suas chaves {} é o escopo da função.
+  isso é verdade para qualquer bloco de código que esteja dentro de chaves, porém o acesso a variável é diferente e depende do escopo do bloco.
+
+VAR: é uma variável que pode 'vazar' do escopo das chaves, isto é, ela pode ser acessada fora das chaves
+LET: é uma variével que não sai do escopo do bloco.
+CONST: é uma variável que posui o valor constante, porém é possível mudar uma propriedade dessa variável, uma vez que ela seja um objeto
+
+Quando usar?
+O let é usado quando precisamos reatribuir o valor de uma variável.
+O ideal é sempre usar const e nunca usar o var
+
+HOISTING: é um comportamento padrão do JavaScript que acontece com variáveis declaradas com var
+  Esse comportamento move todas as declarações destas variáveis para o topo do escopo global, independentemente de onde a declaração foi feita.
+
+TEMPLATE LITERALS: é uma concatenação mais simples de strings, onde ela é sinalizada por `` e as variáveis aparecem da seguinte forma ${variável}
+  exemplo: `Olá ${nome}!`
+
+ARROW FUNCTIONS: é uma forma mais sucinta de escrever funcões simples e anônimas
+  exemplo: const printName = () => 'Lucas';
