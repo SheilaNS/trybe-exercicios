@@ -19,3 +19,14 @@ TEMPLATE LITERALS: é uma concatenação mais simples de strings, onde ela é si
 
 ARROW FUNCTIONS: é uma forma mais sucinta de escrever funcões simples e anônimas
   exemplo: const printName = () => 'Lucas';
+
+
+
+*** DIA 03: Primeiros passos em Jest ***
+
+package.json é um arquivo de configuração usado para definir e configurar dependências e scripts do projeto
+Por meio dele, podemos deixar nítido para o JavaScrip uma espécie de receita com tudas as informações necessárias para ele executar o projeto
+
+npm -v: mostra a versão do npm instalada no computador
+npm init -y: inicia e cria o npm na pasta do projeto
+npm install --save-dev jest: instala a biblioteca do jest no projeto
