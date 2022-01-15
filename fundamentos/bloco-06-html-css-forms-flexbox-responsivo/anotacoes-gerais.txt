@@ -70,7 +70,29 @@ Bootstrap: é um framework CSS que ajuda a aplicar desing responsivo ao nosso si
 O flexbox é disponível no CSS, é aplicado na propriedade display.
 É aplicado no container e em seus itens e serve para desenvolver um layout flexível, melhorando a dispozição dos itens no container pai.
 Existem dois principais eixos no flexbox: o main axis (eixo principal) e o cross axis (eixo transversal). 
-Eles controlam como os itens dentro do container flex ficam dispostos.
+Eles controlam como os itens dentro do container flex ficam dispostos, isto é, o flex é sempre adicionado nos filhos do container pai
 
 Main Axis: eixo horizoltal
-Cros Axix: eixo vertical 
+Cros Axix: eixo vertical
+
+display: flex - transforma os itens (filhos) em flex
+flex-direction: muda a direção dos itens de linhas ou colunas.
+  row é o valor padrão e alinha todos os itens em linha
+  column alinha todos os itens em uma coluna(um encima do outro)
+  row-reverse alinha como o row, mas inverte a ordem dos itens
+  column-reverse alinha como o column, mas também inverte a ordem dos itens
+  temos tb as propriedades inherit, initial e unset 
+flex-wrap: controla como os itens são quebrados
+  nowrap é o valor padrão e esse não quebra nada
+  wrap encaixa os itens de forma igual entre eles de acordo com seus valores internos
+  wrap-reverse age como o wrap, mas inverte a ordem dos itens
+flex-flow: junta o direction e o wrap em uma linha só
+  o primeiro valor é do flex-direction
+  o segundo valor é do flex-wrap
+
+justify-content: ajusta os espaçamentos entre os itens
+  center, end, start, space-around, space-between, space-evenly
+align-items: ajusta os itens no eixo vertical(cross-axis)
+  stretch, flex-start, flex-end, center, baseLine
+align-content: ajusta o espaçamento entre as linhas
+  normal, space-around, space-between, 
