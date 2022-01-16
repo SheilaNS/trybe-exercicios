@@ -95,4 +95,22 @@ justify-content: ajusta os espaçamentos entre os itens
 align-items: ajusta os itens no eixo vertical(cross-axis)
   stretch, flex-start, flex-end, center, baseLine
 align-content: ajusta o espaçamento entre as linhas
-  normal, space-around, space-between, 
+  normal, space-around, space-between
+
+*** DIA 04: CSS Flexbox - Parte 2 ***
+
+align-self: atribui a propriedade flex desejada somente em 1 item
+  flex-start , flex-end , stretch , baseline , center
+order: organiza a posição do item
+flex-grow: aumenta o tamanho do item se for colocado diretamente no item, se for colocado no container pai, ele aumenta todos os itens de forma proporcional
+  valor padrão de 0
+flex-shrink: diminui o tamanho do item. Quanto maior o número, menor o tamanho do item
+  valor padrão de 1
+flex-basis: especifica o tamanho inicial do item. o tamanho do item aumenta de acordo com o conteúdo interno do item
+  valor padrão de auto
+
+Organização do flex box:
+  1 - container
+  2 - sub-container
+  3 - items
+  4 - sub-items
