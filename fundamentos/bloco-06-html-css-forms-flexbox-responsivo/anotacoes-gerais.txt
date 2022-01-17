@@ -114,3 +114,6 @@ Organização do flex box:
   2 - sub-container
   3 - items
   4 - sub-items
+
+*** DIA 05: CSS Responsivo - Mobile First ***
+
