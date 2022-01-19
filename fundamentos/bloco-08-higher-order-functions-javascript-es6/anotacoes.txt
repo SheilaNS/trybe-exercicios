@@ -1,0 +1,6 @@
+*** DIA 01 ***
+
+Higher Order Functions ou HOF são funções que recebem funções como parâmetro ou retorna uma função.
+PE.: variavel.addEventListener('evento', função desejada);
+callback function: é o nome dado às funções que são usadas como parâmetro dentro de outra função e que serão executadas no futuro.
+
