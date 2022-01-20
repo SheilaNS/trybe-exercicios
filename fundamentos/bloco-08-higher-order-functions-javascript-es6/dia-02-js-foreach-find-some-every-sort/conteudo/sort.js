@@ -7,6 +7,12 @@ const people = [
 ];
 
 // Adicione se código aqui
+// crescente
 people.sort((a,b) => a.age - b.age);
+
+console.log(people);
+
+// descrescente
+people.sort((a,b) => b.age - a.age);
 
 console.log(people);
