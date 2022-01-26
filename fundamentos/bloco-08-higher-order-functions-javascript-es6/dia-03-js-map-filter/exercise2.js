@@ -108,12 +108,12 @@ const expectedResult = [
   },
 ];
 
-books.forEach((book) => book.age = book.releaseYear - book.author.birthYear);
 
 function nameAndAge(array) {
   // escreva seu código aqui
-  const resposta = array.map((writer) => `{ age: ${writer.age}, author: ${writer.author.name} }`);
-  return resposta.sort((b, a) => a.age - b.age);
+  array.forEach((book) => book.age = book.releaseYear - book.author.birthYear);
+  const resposta = array.map((writer) => {return {age: writer.age, author: writer.author.name}});
+  return resposta.sort((a, b) => a.age - b.age);
 };
 
 console.log(nameAndAge(books));

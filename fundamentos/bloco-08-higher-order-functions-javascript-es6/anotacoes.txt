@@ -4,3 +4,56 @@ Higher Order Functions ou HOF são funções que recebem funções como parâmet
 PE.: variavel.addEventListener('evento', função desejada);
 callback function: é o nome dado às funções que são usadas como parâmetro dentro de outra função e que serão executadas no futuro.
 
+*** DIA 02 ***
+
+HOFs de array sempre são usadas em arrays e possuem uma estrutura bácisa:
+
+nomeDoArray.nomeDaHOF(funcaoParametro);
+
+Onde a função parâmetro pode ter até 3 parametrôs:
+
+function funcaoParametro(elemento, index, array) {};
+
+O elemento é o único parâmetro obrigatório. Ele representa cada elemento do array.
+O index é a posição do elemento no array.
+O array é um array, pode ser ele mesmo ou outro.
+A função Parâmetro pode ser uma arow function.
+
+forEach: faz um loop do tipo for podendo usar os 3 parâmetros passados a cima. 
+  Ele não tem um valor de retorno, então ele retorna undefined se for dado como return.
+
+every: checa se todos os elementos do array atendem a alguma condição passada na função parâmetro.
+  Retorna um valor booleano, verdadeiro ou falso
+  Se ele receber um parâmetro vazio, o every retorna verdadeiro, pq ele não tem nenhum falso para retornar falso.
+
+some: checa se pelo menos um dos elementos do array atendem a alguma condição passada na função parâmetro.
+  Retorna um valor booleano, verdadeiro ou falso
+  Se ele receber um parâmetro vazio, o some retorna falso, pq ele não tem nenhum verdadeiro para retornar verdadeiro.
+
+find: encontra o primeiro elemento que atende a condição passada na função parâmetro.
+  Retorna o valor do elemento.
+
+sort: coloca os elementos do array em ordem.
+  Essa HOF altera o array original e também tem um retorno.
+  Ela trata os elementos como strings e usa a tabela unicode.
+  Com strings, o sort trata sem uma função parâmetro e ordena em ordem alfabética.
+  Com números, o sort presica de uma função parâmetro.
+  Se o array tiver elementos de qualquer outro tipo que não sejauma string, o sort precisa de uma finção parâmetro.
+  Essa função parâmetro recebe 2 parâmetros: o primeiro parâmetro representa o primeiro elemento e o segundo parâmetro preresenta o segundo parâmentro.
+  Dentro da função parâmetro, o sort ordena em ordem crescente se for o valor do elemento 1 for menor que o elemento 2
+  Ordena em ordem decrescente se o valor de elemento 1 for maior que o valor do elemento 2.
+  No caso de objetos, colocamos a chave do objeto que queremos comprarar dentro da função parâmetro e não em seus parâmetros.
+
+*** DIA 03 ***
+
+filter: é uma HOF de array que retorna um array com todos os elementos que satisfazem a condição passada na função parâmetro.
+  Ele retorna um novo array.
+  Se o array usado tiver objetos, ele retorna um novo array com objetos tb.
+  Se ele não esncontrar nenhum elemento na sua busca, ele retorna um array vazio.
+  Podemos usar o filter para tirar um elemento do array, basta colocar uma codição que busque o que for diferente do que queremos tirar.
+
+map: retorna um novo array com os elementos ou informações que queremos passado na função parâmetro.
+  A função pode tratar a condicção de forma livre.
+  ATENÇÃO: o map sempre retorna um array do mesmo tamanho do array que é usado. Dessa forma, ele é usado apenas quando precisamos modificar os elementos do array.
+
+OBS GERAL: quando retornamos um objeto, precisamos colocar esse objeto dentro de parênteses antes de abrir as chaves dele para que o JS entenda que as chaves do objeto é um objeto e não um bloco de código.
