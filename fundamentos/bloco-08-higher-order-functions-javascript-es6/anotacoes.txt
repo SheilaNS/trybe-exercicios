@@ -56,4 +56,31 @@ map: retorna um novo array com os elementos ou informações que queremos passad
   A função pode tratar a condicção de forma livre.
   ATENÇÃO: o map sempre retorna um array do mesmo tamanho do array que é usado. Dessa forma, ele é usado apenas quando precisamos modificar os elementos do array.
 
+*** DIA 04 ***
+
+reduce: também é um laço de repetição que reduz o array a um valor único. Recebe 2 parâmetros: a função parâmetro(callback) e o valor inicial(initialValue)
+  A função parâmetro tem dois parámetros obrigatórios, o valor anterior(acumulador) e o valor atual(currentValue).
+  O initialValue: é o valor inicial do acumulador e esse parâmetro não é obrigatório.
+  acumulador: acumula o valor desejado ao percorrer o array.
+  currentValue(curr): é o valor do elemento a ser somado ao acumulador quando se percorre o array.
+
+A função callback(função parâmetro) do reduce pode receber até 4 parâmetros:
+  acumulador(obrigatório): 
+  valorCorrente(obrigatório): é o elemento da vez do reduce
+  index(opcional): é o índice do elemento (valorCorrente)
+  array(opcional): array geral
+  ela sempre vai precisar retornar alguma coisa, normalmente o acumulador
+
+OBS REDUCE: se o iitialValue(valor inicial) não for passado como parâmetro no reduce, o acumulador começa com o valor do primeiro elemento do array.
+  Assim, o reduce faz uma volta a menos no seu loop e isso pode alterar o valor final do acumulador, dependendo do tipo de variável que é atribuído a ele.
+
+*** DIA 05 ***
+
+default: cria valores padrão para as variáveis. Ele evita quebra do código em funções que não recebem o parâmetro necessário para que ela funcione devidamente.
+  Para criar esse valor padrão, basta atribuir um valor diretamente no parâmetro da função em questão.
+
+CUIDADO COM O USO DO DEFAULT!!! Ele mascara o erro do código. Tenha sempre a certeza de que isso não aconteça quando usar esse recurso.
+
+destructuring: 
+
 OBS GERAL: quando retornamos um objeto, precisamos colocar esse objeto dentro de parênteses antes de abrir as chaves dele para que o JS entenda que as chaves do objeto é um objeto e não um bloco de código.

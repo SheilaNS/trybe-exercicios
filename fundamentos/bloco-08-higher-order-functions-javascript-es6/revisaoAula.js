@@ -90,3 +90,70 @@ console.log('Pode dirigir ', podeDirigirNome); // para arrumar essa array, é po
 
 const podeDirigirNomeCorreto = users.filter((user) => user.isDriver).map((user) => ({ nome: user.firstName }));
 console.log('Pode dirigir correto ', podeDirigirNomeCorreto);
+
+// REDUCE
+const numeros = [2, 3, 4];
+
+const funcaoReducer = (acumulador, valorCorrente, index, array) => {
+  console.log('---------------------');
+  console.log('aculumador', acumulador);
+  console.log('valor corrente(elemento)', valorCorrente);
+  console.log('índice', index);
+  console.log('array', array);
+  console.log('---------------------');
+  return acumulador;
+}
+
+const resultadoReduce = numeros.reduce(funcaoReducer, 10);
+
+console.log('O valor do reduce ', resultadoReduce);
+
+// DEFAULT
+const soma = (a = 0, b = 0) => a + b;
+
+console.log('Função com dois parâmetros', soma(2, 3)); 
+console.log('Função com um parâmetro', soma(4)); 
+console.log('Função sem parâmetro', soma());
+
+const cervejas = [
+  {
+    codigo: 123,
+    fabricante: 'Urquell',
+    descricao: 'Pilsner Urquell 500ML',
+    valor: 20,
+  },
+  {
+    codigo: 176,
+    fabricante: 'Schornstein',
+    descricao: 'Schornstein Imperial 500ML',
+    valor: 35.99,
+    estoque: 150,
+  },
+];
+
+// crie uma função que imprima o código e a quantidade da cerveja
+const quantidadeEstoque = (estoque = 0, codigo) => {
+  console.log(`A cerveja com o código ${codigo} tem ${estoque} em estoque.`);
+};
+
+cervejas.forEach((cerveja) => quantidadeEstoque(cerveja.estoque, cerveja.codigo));
+
+// DESTRUCTURING
+const pessoa = {
+  nome: 'Ronad',
+  idade: 18.5,
+  profissao: {
+    cargo: 'pessoa instrutora',
+    tempo: '9 meses',
+    empresa: 'Trybe',
+  },
+};
+
+// Imprima uma frase "Meu nome é 'nome', tenho 'idade' anos e trabalho na 'empresa' como 'cargo' a 'tempo'."
+console.log(`Meu nome é ${pessoa.nome}, tenho ${pessoa.idade} anos e trabalho na ${pessoa.profissao.empresa} como ${pessoa.profissao.cargo} a ${pessoa.profissao.tempo}.`);
+// o destructurin ajuda a diminuir o código
+const { nome, idade, profissao } = pessoa;
+const { cargo, tempo, empresa } = profissao; // porque profissão é um objeto tb, podemos desestruturar ele também
+console.log(`Meu nome é ${nome}, tenho ${idade} anos e trabalho na ${empresa} como ${cargo} a ${tempo}.`);
+
+// parei o vídeo do dia 8.5 no minuto 25
