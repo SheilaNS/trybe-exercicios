@@ -1,0 +1,3 @@
+*** DIA 01 ***
+
+callback: é uma função que é passada para uma outra função como parâmetro.
