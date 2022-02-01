@@ -2,7 +2,7 @@ const cryptoURL = 'https://api.coincap.io/v2/assets';
 
 const append = (param) => {
   const ol = document.getElementById('crypto-ol');
-  param.forEach(element => {
+  param.forEach((element) => {
     const li = document.createElement('li');
     li.innerText = element;
     ol.appendChild(li);
@@ -20,7 +20,7 @@ const fetchCoin = () => {
     .then((result) => JSON.parse(result))
     .then((data) => append(data.data
       .filter((top, index) => index < 10)
-      .map((item) => `${item.name} (${item.symbol}): ${item.priceUsd}`)))
+      .map((item) => `${item.name} (${item.symbol}): ${parseFloat(item.priceUsd).toFixed(2)}`)))
     .catch((error) => console.log(error));
 };
 
