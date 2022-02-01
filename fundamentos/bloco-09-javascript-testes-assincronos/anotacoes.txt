@@ -1,3 +1,20 @@
 *** DIA 01 ***
 
 callback: é uma função que é passada para uma outra função como parâmetro.
+
+
+
+
+*** DIA 02 ***
+
+API: é uma camada de sftwre que nos pertmite acessar dados publicos ou privados de uma URL
+
+JSON é um formato que carrega dados para transferência e que pose ser utilizado por várias linguagens
+  ele apresenta uma estrutura de objeto do JS
+
+viacep.com.br - permite o acesso para consulta de CEPs, que usa JSON como transferência de dados por API. Assim conseguimos preencher automaticamente endereços pelo CEP digitado
+
+promise: é assincrona que possui funções que facilitam o contrle do fluxo assincrono
+  possui 3 estados pending(pendente), fullfilled(completo) e rejected(rejeitado)
+
+.fetch(): usamos em uma URL e tratamos o objeto retornado pela URL
