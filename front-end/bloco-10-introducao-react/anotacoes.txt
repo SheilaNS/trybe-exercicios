@@ -24,3 +24,5 @@ nvm --version: mostra a versão do nvm instalado
 JSX (JavaScript Syntax Extension)
 é uma extensão de sintaxe para o JavaScript e é utilizada no React.
 Ele só funciona/roda em ambiente React
+
+classes agrupam funções que fazem sentido estarem juntas
