@@ -1,0 +1,26 @@
+*** DIA 01 - Introdução ao React ***
+
+React é uma biblioteca JavaScript
+Ele usa o npm (Node Package Manager)
+
+uuid - é um pacote do npm que gera uma string única com 16 caracteres, podendo ser usado para criar um id único para a aplicação
+
+Para começar a usar o npm:
+
+npm init -y: -y é uma flag que diz yes para todas as perguntas que o npm faz ao ser iniciado
+alterar o 'test' no package.json para 'jest'
+npm install --save-dev jest: instala o jest como uma dependência de desenvolvimento para que os testes possam ser feitos
+criar o arquivo .gitignore e adicionar o node_modules dentro dele
+npm i react: instala o react como dependência do projeto
+
+diferenças entre o npm e npx: o npm instala o pacote no seu projeto, o npx só executa o pacote
+
+se utilizar o comando npm create-react-app <nome_do_projeto>: ele já instala o react sem a necessidade de usar o npm init
+
+npm start: inicia o servidor npm para que o projeto seja desenvolvido
+
+nvm --version: mostra a versão do nvm instalado
+
+JSX (JavaScript Syntax Extension)
+é uma extensão de sintaxe para o JavaScript e é utilizada no React.
+Ele só funciona/roda em ambiente React
