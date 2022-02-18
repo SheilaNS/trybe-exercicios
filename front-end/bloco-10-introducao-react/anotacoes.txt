@@ -26,3 +26,12 @@ JSX (JavaScript Syntax Extension)
 Ele só funciona/roda em ambiente React
 
 classes agrupam funções que fazem sentido estarem juntas
+
+links do recursos adicionais:
+história do React: https://medium.com/@ppternunes/a-hist%C3%B3ria-do-react-ba346c416fe1
+5 coisas para não fazer com o React: https://blog.logrocket.com/5-things-not-do-building-react-applications/
+5 formas diferentes de usar o CSS no React: https://www.w3schools.com/react/react_css.asp
+documentação Import: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/import
+documentação Classes: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+criando um app com API: https://betterprogramming.pub/creating-a-simple-app-with-react-js-f6aa88998952
+guia completo do React: https://tableless.com.br/guia-completo-react-ecossistema/
