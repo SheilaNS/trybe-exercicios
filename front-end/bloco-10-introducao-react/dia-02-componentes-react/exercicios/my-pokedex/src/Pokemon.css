@@ -1,0 +1,16 @@
+.pokemon {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 15px;
+  margin: 0px 5px 10px;
+  padding: 8px;
+  flex-grow: 2;
+  justify-content: space-around;
+}
+
+.poke-info {
+  font-size: 0.8rem;
+  width: 150px;
+}
