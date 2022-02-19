@@ -73,3 +73,15 @@ MeuComponente.propTypes = {
     avaibility: PropTypes.bool,
   }),
 };
+
+links do recursos adicionais:
+Index as a key is an anti-pattern, por Robin Pakorny: https://robinpokorny.medium.com/index-as-a-key-is-an-anti-pattern-e0349aece318
+React - PropTypes: https://pt-br.reactjs.org/docs/typechecking-with-proptypes.html#proptypes
+ReactJS - Documentação oficial do React: https://pt-br.reactjs.org/
+W3Schools - React Components: https://www.w3schools.com/react/react_components.asp
+W3Schools - React Props: https://www.w3schools.com/react/react_props.asp
+Medium - React JS — Understanding Functional & Class Components: https://codeburst.io/react-js-understanding-functional-class-components-e65d723e909?gi=ed8f5096b528
+FullStack React - Repeating Elements: https://www.newline.co/fullstack-react/30-days-of-react/day-13/#repeating-elements
+freeCodeCamp - Exercise: https://www.freecodecamp.org/learn/front-end-development-libraries/react/write-a-react-component-from-scratch
+Bit - Discover Components: https://bit.dev/components
+React Basics - Understanding React PropTypes - Episode #8: https://www.youtube.com/watch?v=XLthy2j_CCQ
