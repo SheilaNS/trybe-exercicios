@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 import React, { Component } from 'react';
 import UserName from './UserName';
 import UserOtherInfo from './UserOtherInfo';
