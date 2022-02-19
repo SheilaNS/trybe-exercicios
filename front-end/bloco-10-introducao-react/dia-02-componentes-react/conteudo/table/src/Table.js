@@ -19,8 +19,8 @@ class Table extends Component {
       },
       {
         id: 42,
-        name: "Amélia",
-        email: "amelia@gmail.com",
+        name: "Lucas Ferraz",
+        email: "lucas@gmail.com",
         avatar: "https:\/\/cdn.pixabay.com/photo/2017/01/31/13/05/cameo-2023867_640.png",
       },
     ];
