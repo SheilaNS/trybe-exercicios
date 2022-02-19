@@ -3,11 +3,12 @@ import Image from "./Image";
 
 class UserProfile extends React.Component {
   render() {
+    const { name, email, avatar } = this.props.user;
     return (
       <div>
-        <p> {this.props.user.name} </p>
-        <p> {this.props.user.email} </p>
-        <Image source={this.props.user.avatar} alternativeText="User avatar" />
+        <p> {name} </p>
+        <p> {email} </p>
+        <Image source={avatar} alternativeText="User avatar" />
       </div>
     )
   }
