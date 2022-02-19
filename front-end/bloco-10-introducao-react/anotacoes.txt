@@ -12,6 +12,7 @@ alterar o 'test' no package.json para 'jest'
 npm install --save-dev jest: instala o jest como uma dependência de desenvolvimento para que os testes possam ser feitos
 criar o arquivo .gitignore e adicionar o node_modules dentro dele
 npm i react: instala o react como dependência do projeto
+npm install --save-dev prop-types: instala o PropTypes como dev dependency
 
 diferenças entre o npm e npx: o npm instala o pacote no seu projeto, o npx só executa o pacote
 
@@ -35,3 +36,52 @@ documentação Import: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/R
 documentação Classes: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 criando um app com API: https://betterprogramming.pub/creating-a-simple-app-with-react-js-f6aa88998952
 guia completo do React: https://tableless.com.br/guia-completo-react-ecossistema/
+
+
+*** DIA 02 ***
+PropTypes
+
+MeuComponente.propTypes = {
+  // Todos os validadores aqui são, por padrão, validadores opcionais.
+  // Para torná-los obrigatórios basta adicionar .isRequired
+  numeroObrigatório: PropTypes.number.isRequired,
+
+  // Tipos básico do JS.
+  stringOpcional: PropTypes.string,
+  numeroOpcional: PropTypes.number,
+  booleanoOpcional: PropTypes.bool,
+  funcaoOpcional: PropTypes.func,
+  objetoOpcional: PropTypes.object,
+  arrayOpcional: PropTypes.array,
+
+  // Um array de determinado tipo básico
+  arrayDe: PropTypes.arrayOf(PropTypes.number),
+
+  // Um objeto de determinado tipo básico
+  objetoDe: PropTypes.objectOf(PropTypes.number),
+
+  // Um objeto com forma específica
+  objetoComForma: PropTypes.shape({
+    name: PropTypes.string,
+    age: PropTypes.number,
+  }),
+
+  // Um objeto que não permite props extras
+  objetoComFormatoRigoroso: PropTypes.exact({
+    name: PropTypes.string,
+    quantity: PropTypes.number,
+    avaibility: PropTypes.bool,
+  }),
+};
+
+links do recursos adicionais:
+Index as a key is an anti-pattern, por Robin Pakorny: https://robinpokorny.medium.com/index-as-a-key-is-an-anti-pattern-e0349aece318
+React - PropTypes: https://pt-br.reactjs.org/docs/typechecking-with-proptypes.html#proptypes
+ReactJS - Documentação oficial do React: https://pt-br.reactjs.org/
+W3Schools - React Components: https://www.w3schools.com/react/react_components.asp
+W3Schools - React Props: https://www.w3schools.com/react/react_props.asp
+Medium - React JS — Understanding Functional & Class Components: https://codeburst.io/react-js-understanding-functional-class-components-e65d723e909?gi=ed8f5096b528
+FullStack React - Repeating Elements: https://www.newline.co/fullstack-react/30-days-of-react/day-13/#repeating-elements
+freeCodeCamp - Exercise: https://www.freecodecamp.org/learn/front-end-development-libraries/react/write-a-react-component-from-scratch
+Bit - Discover Components: https://bit.dev/components
+React Basics - Understanding React PropTypes - Episode #8: https://www.youtube.com/watch?v=XLthy2j_CCQ
