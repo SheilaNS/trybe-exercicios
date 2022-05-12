@@ -71,7 +71,7 @@ A função callback(função parâmetro) do reduce pode receber até 4 parâmetr
   array(opcional): array geral
   ela sempre vai precisar retornar alguma coisa, normalmente o acumulador
 
-OBS REDUCE: se o iitialValue(valor inicial) não for passado como parâmetro no reduce, o acumulador começa com o valor do primeiro elemento do array.
+OBS REDUCE: se o initialValue(valor inicial) não for passado como parâmetro no reduce, o acumulador começa com o valor do primeiro elemento do array.
   Assim, o reduce faz uma volta a menos no seu loop e isso pode alterar o valor final do acumulador, dependendo do tipo de variável que é atribuído a ele.
 
 *** DIA 05 ***
